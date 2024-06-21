@@ -7,7 +7,7 @@ function emailValidation(){
   email_confirm.oninput=function(){
     if (form.email.value !== form.email_confirm.value){
       parentElement.insertBefore(element,target)
-      element.innerText="El email no coincide"
+      element.innerText="Email does not match"
       email_confirm.setAttribute("style", "background-color:rgba(230,169,171,.5)");
     }else{
       parentElement.removeChild(element)
